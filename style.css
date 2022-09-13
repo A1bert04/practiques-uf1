@@ -1,0 +1,106 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    background-color: rgb(248, 248, 238);
+    background-color: white;
+    color: black;
+}
+
+nav {
+    margin: 0;
+    width: 100%;
+    height: 3vh;
+    background-color: whitesmoke;
+    color: black;
+    padding: 10px;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    /* vertical align to the middle */
+    display: flex;
+    align-items: center;
+    /* makes it always visible */
+    position: fixed;
+    /* make it translucid */
+    opacity: 0.8;
+    /* blursthe backgrpound */
+    /*! Esbrinar perq no funciona el backrop filter */
+    backdrop-filter: blur(10px);
+}
+
+header {
+    background-image: url("https://images.unsplash.com/photo-1557853197-aefb550b6fdc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
+    background-repeat: no-repeat;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-size: cover;
+    margin: 0;
+    height: 30vh;
+
+}
+
+nav h1 {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+
+header div.header-content {
+    height: 27vh;
+    margin: 0;
+    padding: 0;
+    padding-top: 3vh;
+    /* Align items to the middle vertically */
+    display: flex;
+    align-items: center;
+    /* Align items to the middle horizontally */
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+div.header-content h1.big-title {
+    font-size: 3rem;
+    color: white;
+}
+
+/* Create a if for min width 720 px */
+@media screen and (min-width: 720px) {
+    div.web-chapter {
+        padding-left: 25%;
+        padding-right: 25%;
+        padding-top: 3rem;
+    }
+
+    div.web-chapter h1 {
+        font-size: 2.5rem;
+    }
+
+    div.web-chapter h2 {
+        font-size: 1.8rem;
+    }
+
+    div.web-chapter p {
+        font-size: 1.3rem;
+        line-height: 2;
+        text-align: justify;
+    }
+
+    div.web-chapter li {
+        font-size: 1.3rem;
+        line-height: 2;
+        text-align: justify;
+    }
+
+    div.web-chapter div.code {
+        font-size: 1rem;
+        padding-left: 4%;
+        border-left: 1px solid rgb(174, 49, 0); 
+    }
+} 
+
+code span.html-tag {
+    color: rgb(174, 49, 0);
+    margin: 0;
+    padding: 0;
+}
