@@ -13,20 +13,41 @@ function isElementInViewport(el) {
 // en funcion de si el header esta visible o no
 window.addEventListener('scroll', function () {
     // Los elementos
-    let BigTitle = document.querySelector('header');
-    let NavPractiques = document.querySelector('#NavPractiques');
+    let bigTitle = document.querySelector('header');
+    let navPractiques = document.querySelector('#NavPractiques');
 
-    if (isElementInViewport(BigTitle)) {
+    if (isElementInViewport(bigTitle)) {
         // Si esta visible el titulo grande, ocultamos el elemento
-        NavPractiques.style.display = 'none';
-        console.log('Ocultar');
+        navPractiques.style.display = 'none';
+        // console.log('Ocultar');
     } else {
         // Si no esta visible el titulo grande, mostramos el elemento
-        NavPractiques.style.display = 'inline-block';
-        console.log('Mostrar');
+        navPractiques.style.display = 'inline-block';
+        // console.log('Mostrar');
         // TODO Quitar los console.log
+        
     }
 });
+
+// Creamos un evento scroll para cambiar la posicion del indice
+// de relativa a fixed en funcion de si el un elemento esta visible o no
+// window.addEventListener('scroll', function () {
+//     // Los elementos
+//     let firstTitle = document.querySelector('#first-title');
+//     let index = document.querySelector('.index');
+
+//     if (isElementInViewport(firstTitle)) {
+//         // Si esta visible el titulo grande, ponemos la pos en relative
+//         index.style.position = 'relative';
+//         // console.log('Relative');
+//     } else {
+//         // Si no esta visible el titulo grande, ponemos la pos en fixed
+//         index.style.position = 'fixed';
+//         // console.log('Fixed');
+//         // TODO Quitar los console.log
+//     }
+// });
+
 
 // Funcion para sber si la anchura es mas de 768px
 function isLargeScreen() {
