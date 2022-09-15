@@ -43,7 +43,6 @@ header {
     padding: 0;
 }
 
-
 header div.header-content {
     height: 27vh;
     margin: 0;
@@ -63,48 +62,70 @@ div.header-content h1.big-title {
     color: white;
 }
 
-/* Create a if for min width 720 px */
-@media screen and (min-width: 720px) {
-    div.web-chapter {
-        padding-left: 25%;
-        padding-right: 25%;
-        padding-top: 3rem;
-    }
+span.content {
+    /* Display items each one next to the other */
+    display: flex;
+    
+}
 
-    div.web-chapter h1 {
-        font-size: 2.5rem;
-    }
+div.index {
+    width: 27.5%;
+    padding-top: 3rem;
+    text-align: right;
+    /* Make it always visible */
+    position: fixed;
 
-    div.web-chapter h2 {
-        padding-top: 1rem;
-        font-size: 1.8rem;
-    }
+}
 
-    div.web-chapter p {
-        font-size: 1.3rem;
-        line-height: 2;
-        text-align: justify;
-    }
+div.index h1 {
+    font-size: 2.5rem;
+}
 
-    div.web-chapter li {
-        font-size: 1.3rem;
-        line-height: 2;
-        text-align: justify;
-    }
+div.web-chapter {
+    padding-left: 30%;
+    padding-right: 25%;
+    padding-top: 3rem;
+    width: 60%;
+}
 
-    div.web-chapter div.img {
-        text-align: center;
-    }
+div.web-chapter h1 {
+    font-size: 2.5rem;
+}
 
-    div.web-chapter div.code {
-        font-size: 1rem;
-        padding-left: 4%;
-        border-left: 1px solid rgb(174, 49, 0); 
-    }
-} 
+div.web-chapter h2 {
+    padding-top: 1rem;
+    font-size: 1.8rem;
+}
+
+div.web-chapter p {
+    font-size: 1.3rem;
+    line-height: 2;
+    text-align: justify;
+}
+
+div.web-chapter li {
+    font-size: 1.3rem;
+    line-height: 2;
+    text-align: justify;
+}
+
+div.web-chapter div.img {
+    text-align: center;
+}
+
+div.web-chapter div.code {
+    font-size: 1rem;
+    padding-left: 4%;
+    border-left: 1px solid rgb(174, 49, 0); 
+}
 
 code span.html-tag {
     color: rgb(174, 49, 0);
     margin: 0;
     padding: 0;
 }
+
+
+
+
+
