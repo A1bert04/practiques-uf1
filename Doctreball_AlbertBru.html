@@ -12,9 +12,12 @@
         <nav>
             <div id="NavPractiques">PRÀCTIQUES UF1</div>
             <h3 id="author">Albert Bru</h3>
-            <span id="search">
+            <div id="filler">
+
+            </div>
+            <div id="search">
                 <input type="text" id="search-bar" placeholder="Search..">
-            </span>
+            </div>
         </nav>
     </header>
     <div class="content">
@@ -23,17 +26,19 @@
                 Contenidos
             </h1>
             <h2 class="index-chapter scroll-onclick">
-                <a href="#" class="index-chapter">Capítulo 2 - Características básicas</a>
+                <a href="#Titulo2" class="index-chapter">Capítulo 2 - Características básicas</a>
             </h2>
-            <div class="index-desplegable scroll-onclick">
-                <a href="#" class="index-desplegable">P1 - Primer documento HTML</a>
+            <div class="index-el scroll-onclick">
+                <a href="#P1" class="index-el">P1 - Primer documento HTML</a>
             </div>
-            <div class="index-desplegable scroll-onclick">
-                <a href="#" class="index-desplegable">P2 - Ejercicio (2.5)</a>
+            <div class="index-el scroll-onclick">
+                <a href="#P2" class="index-el">P2 - Ejercicio (2.5)</a>
             </div>
-
-            <div class="index-desplegable scroll-onclick">
-                <a href="#" class="index-desplegable">Al final</a>
+            <div class="index-el scroll-onclick">
+                <a href="#P3" class="index-el">P3 - Atributos (2.6)</a>
+            </div>
+            <div class="index-el scroll-onclick">
+                <a href="#P4" class="index-el">Al final</a>
             </div>
 
         </div>
@@ -58,7 +63,7 @@
                 <div class="code">
                     <code>
                         <span class="html-tag">
-                            &lt;;html> <br>
+                            &lt;html> <br>
                         </span>
                         <span class="html-tag">&lt;head> <br></span>
                         <span class="html-tag">&lt;title></span>
@@ -146,13 +151,74 @@
                 </ul>
 
             </article>
+            <article>
+                <h2 class="target-element">Práctica 3 - Los atributos (2.6)</h2>
+                <p>
+                    El ejercicio consiste en imaginar cual es el código HTML de una página
+                    por su contenido, a partir de una imagen que nos da el enunciado.
+                </p>
+                <p>
+                    Imagen:
+                </p>
+                <div class="img">
+                    <img src="https://uniwebsidad.com/static/libros/imagenes/xhtml/e0101.gif"
+                        alt="Imagen de una página">
+                </div>
+                <p>
+                    Respuesta:
+                </p>
+                <div class="code">
+                    <code>
+                        <span class="html-tag">
+                            &lt;html> <br>    
+                            &lt;head> <br>
+                            &lt;title>
+                        </span>
+                        El primer documento HTML 
+                        <span class="html-tag">
+                            &lt;/title> <br>
+                        &lt;/head> <br>
+                        <br>
+                        &lt;body> <br>
+                        &lt;p> <br>
+                        </span>
+                        El lenguaje HTML es <span class="html-tag">&lt;strong></span>tan sencillo<span class="html-tag">&lt;/strong></span> que practicamente se entiende sin estudiar el significado de sus etiquetas principales.
+                        <span class="html-tag">
+                            <br>
+                        &lt;/p>
+                        <br>
+                        &lt;p> <br>
+                        </span>
+                        Ademas de textos en <span class="html-tag">&lt;strong></span>negrita<span class="html-tag">&lt;/strong></span>, tambien se pueden poner <span class="html-tag">&lt;em></span>en cursiva<span class="html-tag">&lt;/em></span> o <span class="html-tag">&lt;del></span>tachados<span class="html-tag">&lt;/del></span>. 
+                        <br>
+                        <span class="html-tag">
+                        &lt;/p> <br>
+                        &lt;/body> <br> <br>
+                        &lt;/html>
+                        </span>
+                    </code>
+                </div>
+                <p>
+                    Resultado:
+                    <!-- TODO: PONER RESULTADO AQUI -->
+                </p>
+                <p>
+                    Conocimientos adquiridos:
+                </p>
+                <ul>
+                    <li>Etiquetas em y del</li>
+                    <li>Imaginar el codigo HTML visualizando la pagina</li>
+                </ul>
+
+            </article>
         </div>
         <br>
     </div>
     <footer class="target-element">
 
     </footer>
-    <script src="./script.js"></script>
+    <script src="./JS/StylesOnLoad.js"></script>
+    <script src="./JS/LeftIndex.js"></script>
 </body>
 
 </html>

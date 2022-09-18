@@ -11,7 +11,7 @@ nav {
     margin: 0;
     width: 100%;
     height: 3vh;
-    background-color: whitesmoke;
+    background-color: black;
     color: black;
     padding: 10px;
     padding-left: 5rem;
@@ -22,33 +22,53 @@ nav {
     /* makes it always visible */
     position: fixed;
     /* make it translucid */
-    opacity: 0.8;
+    opacity: 0.7;
     display: flex;
+    /* Blur the background */
+    /* backdrop-filter: blur(50%);
+    -webkit-backdrop-filter: blur(50%); */
 }
 
+/* if backdrop support: very transparent and blurred
+@supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
+    nav {
+        background-color: rgba(6, 0, 0, 0.568);
+        -webkit-backdrop-filter: saturate(180%) blur(200px);
+        backdrop-filter: saturate(180%) blur(200px);
+    }
+} */
 
 #NavPractiques {
+    color: white;
     display: inline-block;
     margin: 0;
     padding: 0;
     font-size: 1.5rem;
     font-weight: bold;
-    
+
 }
 
 #author {
     padding-left: 1rem;
-    color: gray;
+    color: whitesmoke;
+}
+
+#filler {
+    flex-grow: 0.85;
 }
 
 #search {
     color: red;
-    border: 1px solid red;
-    padding: 0.5rem;
-    border-radius: 10%;
-    padding: 5px;
+    padding-left: 1rem !important;
     opacity: 1;
 
+}
+
+#search-bar {
+    padding: 0;
+    border-radius: 10%;
+    border: 1px solid gray;
+    opacity: 1;
 }
 
 
@@ -58,7 +78,7 @@ div.content {
     /* Display items each one next to the other */
     display: flex;
     padding-top: 3rem;
-    
+
 }
 
 div.index {
@@ -66,7 +86,7 @@ div.index {
     padding-left: 5rem;
     padding-top: 3rem;
     text-align: left;
-    position: relative;
+    position: fixed;
 
 }
 
@@ -77,7 +97,7 @@ div.index h1#titulo-indice {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     padding-top: .5rem;
-    
+
 }
 
 div.index h2 {
@@ -91,21 +111,21 @@ a.index-chapter {
     text-decoration: none;
     color: black;
     margin-bottom: 0;
-    
+
 }
 
-div.index div.index-desplegable {
+div.index div.index-el {
     font-size: 1.2rem;
     padding-top: 1.2rem;
 }
 
-a.index-desplegable {
+a.index-el {
     text-decoration: none;
     color: black;
 }
 
 div.web-chapter {
-    padding-left: 1%;
+    padding-left: 30%;
     padding-right: 5rem;
     padding-top: 3rem;
     width: 60%;
@@ -143,7 +163,7 @@ div.web-chapter div.img {
 div.web-chapter div.code {
     font-size: 1rem;
     padding-left: 2%;
-    border-left: 1px solid rgb(174, 49, 0); 
+    border-left: 1px solid rgb(174, 49, 0);
 }
 
 code span.html-tag {
@@ -151,8 +171,3 @@ code span.html-tag {
     margin: 0;
     padding: 0;
 }
-
-
-
-
-
