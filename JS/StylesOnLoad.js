@@ -18,7 +18,7 @@ function stylesOnLoad() {
         nav.style.paddingRight = '5%';
         webChapter.style.width = '100%';
         index.style.display = 'none';
-        // console.log('Cambiando estilos');
+        console.log('Cambiando estilos');
     }
 
 }
