@@ -10,29 +10,37 @@
 <body>
     <header>
         <nav>
-            <h1 id="NavPractiques">PRÀCTIQUES</h1>
+            <div id="NavPractiques">PRÀCTIQUES UF1</div>
+            <h3 id="author">Albert Bru</h3>
+            <span id="search">
+                <input type="text" id="search-bar" placeholder="Search..">
+            </span>
         </nav>
-        <div class="header-content">
-            <h1 class="big-title">PRÀCTIQUES UF1</h1>
-        </div>
-
     </header>
-    <span class="content">
+    <div class="content">
         <div class="index">
-            <h1 class="titulo-indice">
+            <h1 id="titulo-indice">
                 Contenidos
             </h1>
-            <h2 class="index-chapter">
+            <h2 class="index-chapter scroll-onclick">
                 <a href="#" class="index-chapter">Capítulo 2 - Características básicas</a>
             </h2>
-            <h3 class="index-desplegable">
+            <div class="index-desplegable scroll-onclick">
                 <a href="#" class="index-desplegable">P1 - Primer documento HTML</a>
-            </h3>
+            </div>
+            <div class="index-desplegable scroll-onclick">
+                <a href="#" class="index-desplegable">P2 - Ejercicio (2.5)</a>
+            </div>
+
+            <div class="index-desplegable scroll-onclick">
+                <a href="#" class="index-desplegable">Al final</a>
+            </div>
+
         </div>
         <div class="web-chapter">
-            <h1 id="first-title">Capítulo 2: Características básicas</h1>
+            <h1 class="target-element" id="first-title">Capítulo 2: Características básicas</h1>
             <article>
-                <h2>Práctica 1 - Primer documento HTML (2.2)</h2>
+                <h2 class="target-element">Práctica 1 - Primer documento HTML (2.2)</h2>
                 <p>
                     La primera práctica consiste, como su propio nombre
                     indica, en crear el primer documento HTML. Para hacerlo nos
@@ -50,18 +58,18 @@
                 <div class="code">
                     <code>
                         <span class="html-tag">
-                            &lthtml> <br>
+                            &lt;;html> <br>
                         </span>
-                        <span class="html-tag">&lthead> <br></span>
-                        <span class="html-tag">&lttitle></span>
-                        El primer documento HTML <span class="html-tag">&lt/title></span> <br>
-                        <span class="html-tag">&lt/head> </span><br>
+                        <span class="html-tag">&lt;head> <br></span>
+                        <span class="html-tag">&lt;title></span>
+                        El primer documento HTML <span class="html-tag">&lt;/title></span> <br>
+                        <span class="html-tag">&lt;/head> </span><br>
                         <br>
-                        <span class="html-tag">&ltbody> <br> </span> El lenguaje HTML es <span class="html-tag">&ltstrong></span>tan sencillo<span class="html-tag">&lt/strong></span> que 
-                        prácticamente se entiende sin estudiar el significado de sus etiquetas principales.<span class="html-tag">&lt/p></span> <br>
-                        <span class="html-tag">&lt/body></span> <br>
+                        <span class="html-tag">&lt;body> <br> </span> El lenguaje HTML es <span class="html-tag">&lt;strong></span>tan sencillo<span class="html-tag">&lt;/strong></span> que 
+                        prácticamente se entiende sin estudiar el significado de sus etiquetas principales.<span class="html-tag">&lt;/p></span> <br>
+                        <span class="html-tag">&lt;/body></span> <br>
                         <br>
-                        <span class="html-tag">&lt/html></span> <br>
+                        <span class="html-tag">&lt;/html></span> <br>
                     </code>
                 </div>
                 <p>
@@ -70,15 +78,16 @@
                 </p>
                 <p>
                     Conocimientos adquiridos con esta practica:
+                </p>
                 <ul>
                     <li>Funcionamiento de las etiquetas</li>
                     <li>Etiquetas html, head, body, title, strong y p</li>
                     <li>Distinción entre el head y el body de un documento HTML.</li>
                 </ul>
-                </p>
+
             </article>
             <article>
-                <h2>Práctica 2 - Ejercicio (2.5)</h2>
+                <h2 class="target-element">Práctica 2 - Ejercicio (2.5)</h2>
                 <p>
                     El ejercicio consiste en imaginar cual es el código HTML de una página
                     por su contenido, a partir de una imagen que nos da el enunciado.
@@ -87,7 +96,8 @@
                     Imagen:
                 </p>
                 <div class="img">
-                    <img src="https://uniwebsidad.com/static/libros/imagenes/xhtml/e0101.gif" alt="Imagen de una página">
+                    <img src="https://uniwebsidad.com/static/libros/imagenes/xhtml/e0101.gif"
+                        alt="Imagen de una página">
                 </div>
                 <p>
                     Respuesta:
@@ -95,31 +105,31 @@
                 <div class="code">
                     <code>
                         <span class="html-tag">
-                            &lthtml> <br>    
-                            &lthead> <br>
-                            &lttitle>
+                            &lt;html> <br>    
+                            &lt;head> <br>
+                            &lt;title>
                         </span>
                         El primer documento HTML 
                         <span class="html-tag">
-                            &lt/title> <br>
-                        &lt/head> <br>
+                            &lt;/title> <br>
+                        &lt;/head> <br>
                         <br>
-                        &ltbody> <br>
-                        &ltp> <br>
+                        &lt;body> <br>
+                        &lt;p> <br>
                         </span>
-                        El lenguaje HTML es <span class="html-tag">&ltstrong></span>tan sencillo<span class="html-tag">&lt/strong></span> que practicamente se entiende sin estudiar el significado de sus etiquetas principales.
+                        El lenguaje HTML es <span class="html-tag">&lt;strong></span>tan sencillo<span class="html-tag">&lt;/strong></span> que practicamente se entiende sin estudiar el significado de sus etiquetas principales.
                         <span class="html-tag">
                             <br>
-                        &lt/p>
+                        &lt;/p>
                         <br>
-                        &ltp> <br>
+                        &lt;p> <br>
                         </span>
-                        Ademas de textos en <span class="html-tag">&ltstrong></span>negrita<span class="html-tag">&lt/strong></span>, tambien se pueden poner <span class="html-tag">&ltem></span>en cursiva<span class="html-tag">&lt/em></span> o <span class="html-tag">&ltdel></span>tachados<span class="html-tag">&lt/del></span>. 
+                        Ademas de textos en <span class="html-tag">&lt;strong></span>negrita<span class="html-tag">&lt;/strong></span>, tambien se pueden poner <span class="html-tag">&lt;em></span>en cursiva<span class="html-tag">&lt;/em></span> o <span class="html-tag">&lt;del></span>tachados<span class="html-tag">&lt;/del></span>. 
                         <br>
                         <span class="html-tag">
-                        &lt/p> <br>
-                        &lt/body> <br> <br>
-                        &lt/html>
+                        &lt;/p> <br>
+                        &lt;/body> <br> <br>
+                        &lt;/html>
                         </span>
                     </code>
                 </div>
@@ -129,14 +139,19 @@
                 </p>
                 <p>
                     Conocimientos adquiridos:
+                </p>
                 <ul>
                     <li>Etiquetas em y del</li>
                     <li>Imaginar el codigo HTML visualizando la pagina</li>
                 </ul>
-                </p>
+
             </article>
         </div>
-    </span>
+        <br>
+    </div>
+    <footer class="target-element">
+
+    </footer>
     <script src="./script.js"></script>
 </body>
 
