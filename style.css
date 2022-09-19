@@ -134,6 +134,14 @@ a.index-el {
     color: black;
 }
 
+h1.target-element {
+    padding-top: 1rem;
+}
+
+h1.target-element#first-title {
+    padding-top: 0;
+}
+
 div.web-chapter {
     padding-left: 30%;
     padding-right: 5rem;

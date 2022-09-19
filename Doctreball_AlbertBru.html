@@ -39,6 +39,18 @@
                 <a href="#P3" class="index-el">P3 - Atributos (2.6)</a>
             </div>
             <div class="index-el scroll-onclick">
+                <a href="#P4" class="index-el">P4 - Elementos en bloque y en linea (2.8)</a>
+            </div>
+            <h2 class="index-chapter scroll-onclick">
+                <a href="#Titulo3" class="index-chapter">Capítulo 3 - Texto</a>
+            </h2>
+            <div class="index-el scroll-onclick">
+                <a href="#P1" class="index-el">P1 - Los parrafos (p) (3.3)</a>
+            </div>
+            <div class="index-el scroll-onclick">
+                <a href="#P2" class="index-el">P1 - Las secciones (h1-6) (3.4)</a>
+            </div>
+            <div class="index-el scroll-onclick">
                 <a href="#P4" class="index-el">Al final</a>
             </div>
 
@@ -155,47 +167,100 @@
             <article>
                 <h2 class="target-element">Práctica 3 - Los atributos (2.6)</h2>
                 <p>
-                    El ejercicio consiste en imaginar cual es el código HTML de una página
-                    por su contenido, a partir de una imagen que nos da el enunciado.
+                    En esta practica hemos aprendido el uso de las etiquetas a, que nos sirven para
+                    incluir enlaces en una página y crear hipervínculos.
                 </p>
                 <p>
-                    Imagen:
-                </p>
-                <div class="img">
-                    <img src="https://uniwebsidad.com/static/libros/imagenes/xhtml/e0101.gif"
-                        alt="Imagen de una página">
-                </div>
-                <p>
-                    Respuesta:
+                    Código:
                 </p>
                 <div class="code">
                     <code>
                         <span class="html-tag">
-                            &lt;html> <br>    
+                            &lt;html> <br>
                             &lt;head> <br>
                             &lt;title>
                         </span>
-                        El primer documento HTML 
+                        Ejemplo de atributos en las Etiquetas
                         <span class="html-tag">
                             &lt;/title> <br>
                         &lt;/head> <br>
                         <br>
                         &lt;body> <br>
-                        &lt;p> <br>
+                            &lt;p> <br>
                         </span>
-                        El lenguaje HTML es <span class="html-tag">&lt;strong></span>tan sencillo<span class="html-tag">&lt;/strong></span> que practicamente se entiende sin estudiar el significado de sus etiquetas principales.
+                                Los enlaces son muy fáciles de indicar: <br>
+                                <span class="html-tag">&lt;a></span>Soy un enlace incompleto, porque no tengo dirección de destino<span class="html-tag">&lt;/a>.</span> <br>
+                                <span class="html-tag">&lt;a href="http://www.google.com"></span> Este otro enlace apunta a la página de Google
+                                <span class="html-tag">
+                                &lt;/a>. <br>
+                                &lt;/p> <br>
+                                &lt;/body> <br>
+                                <br>
+                                &lt;/html> <br>
+                                </span>
+                    </code>
+                </div>
+                <p>
+                    Resultado:
+                    <!-- TODO: PONER RESULTADO AQUI -->
+                </p>
+                <p>
+                    Conocimientos adquiridos:
+                </p>
+                <ul>
+                    <li>Etiqueta a y su uso.</li>
+                </ul>
+            </article>
+            <article>
+                <h2 class="target-element">Práctica 4 - Elementos en bloque y en linea (2.8)</h2>
+                <p>
+                    Hay dos tipos de elementos en HTML: los elementos en bloque y los elementos en línea.
+                    Estos son distintos por el espacio que ocupan, ya que los elementos en liena ocupan solo
+                    el espacio del texto que contienen, mientras que los elementos en bloque ocupan toda el ancho
+                    de la pagina.
+                </p>
+                <p>
+                    En la siguiente imagen podemos observar esta diferencia (añadiendo bordes con CSS):
+                </p>
+                <div class="img">
+                    <img src="https://uniwebsidad.com/static/libros/imagenes/xhtml/ejemplo_elementos_linea_bloque.gif"
+                        alt="Imagen de una página">
+                </div>
+                <p>
+                    Código:
+                </p>
+                <div class="code">
+                    <code>
                         <span class="html-tag">
+                            &lt;html> <br>
+                            &lt;head> <br>
+                          &lt;title>
+                        </span>
+                        Ejemplo de elementos en línea y elementos de bloque
+                        <span class="html-tag">
+                            &lt;/title> <br>
+                            &lt;/head> <br>
                             <br>
-                        &lt;/p>
-                        <br>
-                        &lt;p> <br>
+                            &lt;body> <br>
+                            &lt;p>
                         </span>
-                        Ademas de textos en <span class="html-tag">&lt;strong></span>negrita<span class="html-tag">&lt;/strong></span>, tambien se pueden poner <span class="html-tag">&lt;em></span>en cursiva<span class="html-tag">&lt;/em></span> o <span class="html-tag">&lt;del></span>tachados<span class="html-tag">&lt;/del></span>. 
-                        <br>
+                        Los párrafos son elementos de bloque.
                         <span class="html-tag">
-                        &lt;/p> <br>
-                        &lt;/body> <br> <br>
-                        &lt;/html>
+                            &lt;/p> <br>
+                            &lt;a href="http://www.google.com">
+                        </span>
+                        Los enlaces son elementos en línea
+                        <span class="html-tag">
+                            &lt;/a> <br>
+                            &lt;p>
+                        </span>
+                        Dentro de un párrafo, <span class="html-tag">&lt;a href="http://www.google.com"></span> los enlaces <span class="html-tag">&lt;/a></span> <br>
+                        siguen siendo elementos en línea.
+                        <span class="html-tag">
+                            &lt;/p> <br>
+                            &lt;/body> <br>
+                            <br>
+                            &lt;/html> <br>
                         </span>
                     </code>
                 </div>
@@ -207,8 +272,131 @@
                     Conocimientos adquiridos:
                 </p>
                 <ul>
-                    <li>Etiquetas em y del</li>
-                    <li>Imaginar el codigo HTML visualizando la pagina</li>
+                    <li>Diferencia entre elementos en bloque y elementos en linea.</li>
+                </ul>
+            </article>
+            <h1 class="target-element" id="second-title">Capítulo 3: Texto</h1>
+            <article>
+                <h2 class="target-element">Práctica 1 - Los parrafos (3.3)</h2>
+                <p>
+                   Podemos escribir parrafos en HTML usando la etiqueta p. Los parrafos son elementos en bloque, por lo que ocupan todo el ancho de la pagina.
+                </p>
+                <div class="img">
+                    <img src="https://uniwebsidad.com/static/libros/imagenes/xhtml/ejemplo_estructurar_parrafos.gif"
+                        alt="Imagen de una página">
+                </div>
+                <p>
+                    Código:
+                </p>
+                <div class="code">
+                    <code>
+                        <span class="html-tag">
+                            &lt;html> <br>
+                        
+                            &lt;head> <br>
+                            &lt;title>
+                        </span>
+                        Ejemplo de texto estructurado con párrafos
+                        <span class="html-tag">
+                            &lt;/title> <br>
+                            &lt;/head> <br>
+                            <br>
+                            &lt;body> <br>
+                            &lt;p>
+                        </span>
+                        Este es el texto que forma el primer párrafo de la página.
+                        Los párrafos pueden ocupar varias líneas y el navegador se encarga
+                        de ajustar su longitud al tamaño de la ventana.
+                        <span class="html-tag">
+                            &lt;/p> <br>
+                            <br>
+                            &lt;p>
+                        </span>
+                        El segundo párrafo de la página también se define encerrando
+                        su texto con la etiqueta p. El navegador también se encarga de
+                        separar automáticamente cada párrafo.
+                        <span class="html-tag">
+                            &lt;/p> <br>
+                        &lt;/body> <br>
+                        <br>
+                        &lt;/html>
+                        </span>
+                    </code>
+                </div>
+                <p>
+                    Resultado:
+                    <!-- TODO: PONER RESULTADO AQUI -->
+                </p>
+                <p>
+                    Conocimientos adquiridos con esta practica:
+                </p>
+                <ul>
+                    <li>Etiqueta p y su uso.</li>
+                </ul>
+
+            </article>
+            <article>
+                <h2 class="target-element">Práctica 2 - Las secciones (h) (3.4)</h2>
+                <p>
+                    Las secciones son elementos en bloque que sirven para dividir el contenido de una pagina en secciones.
+                    Las secciones se definen con las etiquetas h1, h2, h3, h4, h5 y h6. Cada una de estas etiquetas representa
+                    una sección distinta, siendo h1 la sección principal y h6 la sección menos importante.
+                </p>
+                <p>
+                    Las etiquetas h solo se usan con el titulo de la sección, y no es necesario ponerla al principio y al final de la sección.
+                    Veamos un ejemplo:
+                </p>
+                <div class="img">
+                    <img src="https://uniwebsidad.com/static/libros/imagenes/xhtml/ejemplo_estructurar_parrafos.gif"
+                        alt="Imagen de una página">
+                </div>
+                <p>
+                    Código:
+                </p>
+                <div class="code">
+                    <code>
+                        <span class="html-tag">
+                            &lt;html> <br>
+                        
+                            &lt;head> <br>
+                            &lt;title>
+                        </span>
+                        Ejemplo de texto estructurado con párrafos
+                        <span class="html-tag">
+                            &lt;/title> <br>
+                            &lt;/head> <br>
+                            <br>
+                            &lt;body> <br>
+                            &lt;p>
+                        </span>
+                        Este es el texto que forma el primer párrafo de la página.
+                        Los párrafos pueden ocupar varias líneas y el navegador se encarga
+                        de ajustar su longitud al tamaño de la ventana.
+                        <span class="html-tag">
+                            &lt;/p> <br>
+                            <br>
+                            &lt;p>
+                        </span>
+                        El segundo párrafo de la página también se define encerrando
+                        su texto con la etiqueta p. El navegador también se encarga de
+                        separar automáticamente cada párrafo.
+                        <span class="html-tag">
+                            &lt;/p> <br>
+                        &lt;/body> <br>
+                        <br>
+                        &lt;/html>
+                        </span>
+                    </code>
+                </div>
+                <p>
+                    Resultado:
+                    <!-- TODO: PONER RESULTADO AQUI -->
+                </p>
+                <p>
+                    Conocimientos adquiridos con esta practica:
+                </p>
+                <ul>
+                    <li>Etiqueta p y su uso.</li>
                 </ul>
 
             </article>
