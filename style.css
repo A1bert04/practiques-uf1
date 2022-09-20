@@ -5,6 +5,12 @@ body {
     color: black;
 }
 
+/* Make a progress scrollbar */
+::-webkit-progress-bar {
+    background-color: white;
+}
+
+
 /* HEADER */
 header {
     width: 100%;
@@ -19,8 +25,8 @@ nav {
     background-color: black;
     color: black;
     padding: 10px;
-    padding-left: 5rem;
-    padding-right: 5rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
     /* vertical align to the middle */
     display: flex;
     align-items: center;
@@ -92,8 +98,8 @@ div.content {
 }
 
 div.index {
-    width: 27.5%;
-    padding-left: 5rem;
+    width: 20em;
+    padding-left: 3rem;
     padding-top: 3rem;
     text-align: left;
     position: fixed;
@@ -101,7 +107,7 @@ div.index {
 }
 
 div.index h1#titulo-indice {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     margin-block-start: 0em;
     margin-block-end: 0em;
     margin-inline-start: 0px;
@@ -111,7 +117,7 @@ div.index h1#titulo-indice {
 }
 
 div.index h2 {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     padding-top: 1.2rem;
     margin-block-end: 0;
     margin-block-start: 0;
@@ -121,17 +127,25 @@ a.index-chapter {
     text-decoration: none;
     color: black;
     margin-bottom: 0;
-
 }
 
 div.index div.index-el {
     font-size: 1.2rem;
-    padding-top: 1.2rem;
+    margin-top: .8rem;
+    padding-top: .2rem;
+    padding-bottom: .2rem;
+    padding-left: .8rem;
+    max-width: 80%;
 }
 
 a.index-el {
     text-decoration: none;
     color: black;
+    font-size: 1.1rem;
+}
+
+div.index-el:hover {
+    background-color: #f1f1f1;
 }
 
 h1.target-element {
@@ -143,7 +157,7 @@ h1.target-element#first-title {
 }
 
 div.web-chapter {
-    padding-left: 30%;
+    padding-left: 27em;
     padding-right: 5rem;
     padding-top: 3rem;
     width: 60%;

@@ -6,7 +6,7 @@ function isLargeScreen() {
 }
 
 // Conjunto de estilos que hay que cargar en ciertos casos
-function stylesOnLoad() {JS/StylesOnLoad.js
+function stylesOnLoad() {
     // Si la anchura es menos de 768px, cambiamos algunos estilos
     if (!isLargeScreen()) {
         let webChapter = document.querySelector('div.web-chapter');
@@ -20,6 +20,7 @@ function stylesOnLoad() {JS/StylesOnLoad.js
         index.style.display = 'none';
         console.log('Cambiando estilos');
     }
+
 
 }
 
