@@ -1,0 +1,76 @@
+/* Estilos de la barra de navegacion */
+
+header {
+    width: 100%;
+    /* makes it always visible */
+    position: fixed;
+    /* make it translucid */
+    opacity: 0.7;
+}
+
+nav {
+    height: 3vh;
+    background-color: black;
+    color: black;
+    padding: 10px;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    /* vertical align to the middle */
+    display: flex;
+    align-items: center;
+
+    display: flex;
+    /* Blur the background */
+    /* backdrop-filter: blur(50%);
+    -webkit-backdrop-filter: blur(50%); */
+}
+
+/* if backdrop support: very transparent and blurred
+@supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
+    nav {
+        background-color: rgba(6, 0, 0, 0.568);
+        -webkit-backdrop-filter: saturate(180%) blur(200px);
+        backdrop-filter: saturate(180%) blur(200px);
+    }
+} */
+
+.nav-left {
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+#NavPractiques {
+    color: white;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+
+}
+
+#author {
+    padding-left: 1rem;
+    color: whitesmoke;
+}
+
+#search {
+    color: red;
+    padding-left: 1rem !important;
+    opacity: 1;
+
+}
+
+.nav-right {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#search-bar {
+    padding: 0;
+    border-radius: 10%;
+    border: 1px solid gray;
+    opacity: 1;
+}

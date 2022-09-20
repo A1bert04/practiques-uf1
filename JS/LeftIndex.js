@@ -1,6 +1,18 @@
-console.log('Cargado JS/LeftIndex.js');
+/* 
+Este codigo de JS es para que los botones del indice de la izquierda
+hagan autoscroll a la posicion de la seccion correspondiente.
 
-// Funcion para hacer autoscroll a una posicion
+Para hacerlo primero se obtiene la posicion de cada seccion
+(cuya clase es target-element) y se guarda en un array.
+
+Posteriormente agregamos un event listener a cada boton del indice
+(clase: scroll-onclick) para que cuando se haga click se 
+llame a la funcion ScrollToElement, y le pasamos de parametro
+la posicion de la seccion correspondiente (que hemos conseguido
+en el paso anterior)
+*/
+
+// Deelaramos la funcion que nos hace scroll automatico a una posicion
 function scrollToElement(pos) {
     window.scrollTo({
         top: pos,
@@ -14,17 +26,15 @@ var indexButtons = document.querySelectorAll('.scroll-onclick');
 // Seleccionamos los titulos de los capitulos y los guardamos en un array
 var targetElements = document.querySelectorAll('.target-element');
 
-// Aconseguimos la altura de todos los elementos y los guardamos en un array
+// Aconseguimos la posicion de todos los elementos y los guardamos en un array
 var targetElementsHeights = [];
+
+// Recorremos el array de elementos y vamos guardando su posicion en targetElementsHeights
 for (let i = 0; i < targetElements.length; i++) {
     let rect = targetElements[i].getBoundingClientRect();
     let top = rect.top + window.scrollY - 50;
     targetElementsHeights.push(top);
 };
-
-// TODO Recordar quitar estos console.log
-console.log(indexButtons);
-console.log(targetElements);
 
 // Para cada boton del indice, le asignamos un evento onclick que hace scroll al target 
 // correspondiente (con mismo i en el otro array)
