@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <title>Pràctiques</title>
     <link rel="stylesheet" href="./Styles/General.css">
-    <link rel="stylesheet" href="./Styles/NavBar.css">k
+    <link rel="stylesheet" href="./Styles/NavBar.css">
     <link rel="stylesheet" href="./Styles/LeftIndex.css">
     <link rel="stylesheet" href="./Styles/Content.css">
     <link rel="stylesheet" href="./Styles/Footer.css">
@@ -112,7 +112,7 @@
                     <li>Etiquetas html, head, body, title, strong y p</li>
                     <li>Distinción entre el head y el body de un documento HTML</li>
                 </ul>
-    
+
             </article>
             <article>
                 <h2 class="target-element">Práctica 2 - Ejercicio (2.5)</h2>
@@ -172,7 +172,7 @@
                     <li>Etiquetas em y del</li>
                     <li>Imaginar el codigo HTML visualizando la pagina</li>
                 </ul>
-    
+
             </article>
             <article>
                 <h2 class="target-element">Práctica 3 - Los atributos (2.6)</h2>
@@ -344,7 +344,7 @@
                 <ul>
                     <li>Etiqueta p y su uso</li>
                 </ul>
-    
+
             </article>
             <article>
                 <h2 class="target-element">Práctica 2 - Las secciones (h) (3.4)</h2>
@@ -432,7 +432,7 @@
                     <li>Secciones</li>
                     <li>Uso de la etiqueta h</li>
                 </ul>
-    
+
             </article>
             <article>
                 <h2 class="target-element">Práctica 3 - Ejercicio (3.5)</h2>
@@ -504,7 +504,7 @@
                 <ul>
                     <li>Diferentes usos de las etiquetas h1, h2, h3, h4, h5 y h6 </li>
                 </ul>
-    
+
             </article>
             <article>
                 <h2 class="target-element">Práctica 4 - Etiquetas em y strong (3.6)</h2>
@@ -514,7 +514,35 @@
                 </p>
                 <div class="code">
                     <code>
+                        <span class="html-tag">
+                            &lt;html> <br>
+                        
+                        &lt;head> <br>
+                        &lt;title>
+                        </span>
+                        Ejemplo de etiqueta em y strong
+                        <span class="html-tag">
+                            &lt;/title> <br>
+                        &lt;/head> <br>
+                        <br>
+                        &lt;body> <br>
+                        &lt;p>
+                        </span>
+                        El lenguaje HTML permite marcar algunos segmentos de texto
+                        como<span class="html-tag">&lt;em></span> muy importantes<span class="html-tag">&lt;/em></span> y otros segmentos como<span class="html-tag">&lt;strong></span> los
+                        más importantes.
+                        <span class="html-tag">
+                            &lt;/strong>&lt;/p> <br>
+                        &lt;/body> <br>
+                        <br>
+                        &lt;/html> <br>
+                        </span>
                     </code>
+                </div>
+                <p>El ressultado se tendria que ver como la siguiente imagen:</p>
+                <div class="img">
+                    <img src="https://uniwebsidad.com/static/libros/imagenes/xhtml/ejemplo_etiqueta_em_strong.gif"
+                        alt="Imagen de una página">
                 </div>
                 <p>
                     Resultado:
@@ -526,14 +554,860 @@
                 <ul>
                     <li>Etiquetas em y strong y como se usan</li>
                 </ul>
-    
+
+            </article>
+            <article>
+                <h2 class="target-element">Práctica 5 - Ejercicio (3.7)</h2>
+                <p>
+                    En este ejercicio tendremos que estructurar y marcar el texto siguiente extraido de la Wikipedia,
+                    para
+                    que quede como en la imagen de abajo:
+                </p>
+                <div class="img">
+                    <img src="https://uniwebsidad.com/static/libros/imagenes/xhtml/e0201.gif"
+                        alt="Imagen de una página">
+                </div>
+                <p>Respuesta del ejercicio:</p>
+                <div class="code">
+                    <code>
+                        <span class="html-tag">
+                            &lt;html> <br>
+                        &lt;head> <br>
+                        &lt;title>
+                        </span>
+                        La exploración espacial
+                        <span class="html-tag">
+                            &lt;/title> <br>
+                        &lt;/head> <br>
+                        <br>
+                        &lt;body> <br> <br>
+                        
+                        &lt;h2>
+                        </span>
+                        La exploración espacial
+                        <span class="html-tag">
+                            &lt;/h2> <br>
+                        
+                        <br>
+                        &lt;p>
+                        </span>
+                        La 
+                        <span class="html-tag">
+                            &lt;strong>
+                        </span>
+                        exploración espacial
+                        <span class="html-tag">&lt;/strong></span>
+                        designa los esfuerzos del hombre en estudiar el 
+                            espacio y sus astros desde el punto de vista científico y de su explotación económica. 
+                            Estos esfuerzos pueden involucrar tanto seres humanos viajando en naves espaciales como satélites 
+                            con recursos de telemetría o sondas teleguiadas enviadas a otros planetas (orbitando o aterrizando en 
+                            la superficie de estos cuerpos celestes).
+                        <span class="html-tag">
+                            &lt;/p> <br> <br>
+                        
+                        &lt;p>
+                        </span>
+                            Las personas que pilotan naves espaciales, o son pasajeros en ellas, 
+                            se llaman astronautas (en Rusia: 
+                            <span class="html-tag">
+                                &lt;em>
+                            </span>
+                            cosmonautas
+                            <span class="html-tag">
+                                &lt;/em>
+                            </span>
+                            ; en China: 
+                            <span class="html-tag">
+                                &lt;em>
+                            </span>
+                            taikonautas
+                            <span class="html-tag">
+                                &lt;/em>
+                            </span>
+                            ). 
+                            Técnicamente se considera astronauta a todo aquel que emprenda un vuelo sub-orbital (sin entrar en órbita) u 
+                            orbital a como mínimo 100 km de altitud (considerado el límite externo de la atmósfera).
+                            <span class="html-tag">
+                                &lt;/p> 
+                            </span>
+                            <br> <br>
+                        
+                        <span class="html-tag">
+                            &lt;p>
+                        </span>
+                            El cielo siempre ha atraído la atención y los sueños del hombre. Ya en 1634 se publicó la 
+                            que se considera primera novela de ciencia ficción, &lt;em>Somnium
+                            <span class="html-tag">
+                                &lt;/em>
+                            </span>, de 
+                            <span class="html-tag">
+                                &lt;strong>
+                            </span>
+                            Johannes 
+                                Kepler
+                                <span class="html-tag">
+                                    &lt;/strong>
+                                </span>
+                                , que narra un hipotético viaje a la Luna. Más tarde, en 1865, en una famosa obra 
+                                de ficción titulada 
+                                <span class="html-tag">
+                                    &lt;em>
+                                </span>
+                                "De la Terre à la Lune"
+                                <span class="html-tag">
+                                    &lt;/em>, &lt;strong>
+                                </span>
+                                Julio Verne&lt;/strong> escribe sobre un grupo 
+                                de hombres que viajó hasta la Luna usando un gigantesco cañón.
+                                <span class="html-tag">
+                                    &lt;/p> <br> <br>
+                        
+                        &lt;p>
+                                </span>
+                                En Francia, 
+                                <span class="html-tag">
+                                    &lt;strong>
+                                </span>
+                                Georges Méliès
+                                <span class="html-tag">
+                                    &lt;/strong>
+                                </span>
+                                , uno de los pioneros del cine, 
+                            tomaba la novela de Verne para crear 
+                            <span class="html-tag">
+                                &lt;em>
+                            </span>
+                            "Le voyage dans la Lune" <span class="html-tag">&lt;/em></span> (1902), 
+                            una de las primeras películas de ciencia ficción en la que describía un increíble 
+                            viaje a la Luna. En obras como <span class="html-tag">&lt;em></span> "The War of the Worlds"
+                            <span class="html-tag">&lt;/em></span> (1898) y <span class="html-tag">&lt;em></span> "The First 
+                                Men in The Moon" <span class="html-tag">&lt;/em></span> (1901), &lt;strong>Herbert George Wells&lt;/strong> también se concibieron 
+                                ideas de exploración del espacio y de contacto con civilizaciones extraterrestres.
+                                <span class="html-tag">
+                                    &lt;/p> <br> <br>
+                        
+                        &lt;/body> <br>
+                        <br>
+                        &lt;/html> <br>
+                                </span>
+                    </code>
+                </div>
+                <p>
+                    Resultado:
+                    <!-- TODO: PONER RESULTADO AQUI -->
+                </p>
+            </article>
+            <article>
+                <h2 class="target-element">Práctica 6 - Etiquetas ins y del (3.8)</h2>
+                <p>
+                    En esta practica entenderemos los usos de las etiquetas ins y del.
+                </p>
+                <p>
+                    La etiqueta <em>del</em> sirve para tachar texto, para que se entenda que ya no tiene validez, en
+                    cambio
+                    la etiqueta <em>ins</em> subraya el texto, para dar a entender que este es el nuevo texto que lo
+                    remplaza.
+                </p>
+                <p>La siguiente imagen es el resultado del codigo inmediatamente inferior a esta:</p>
+                <div class="img">
+                    <img src="https://uniwebsidad.com/static/libros/imagenes/xhtml/ejemplo_etiqueta_ins_del.gif"
+                        alt="Imagen de una página">
+                </div>
+                <p>Codigo:</p>
+                <div class="code">
+                    <code>
+                        <span class="html-tag">
+                            &lt;html> <br>
+                        &lt;head> <br>
+                        &lt;title>
+                        </span>
+                        Ejemplo de etiqueta ins y del
+                        <span class="html-tag">
+                            &lt;/title>
+                            <br>
+                            &lt;/head> <br>
+                            <br>
+                        &lt;body> <br>
+                        </span>
+                        <span class="html-tag">
+                            &lt;h3>
+                        </span>
+                        Ejemplo de etiqueta ins y del
+                        <span class="html-tag">
+                            &lt;/h3> <br>
+                        &lt;p>
+                        </span>
+                        El HTML, acrónimo inglés de Hyper Text Markup Language (lenguaje de <span class="html-tag">&lt;del datetime="20091025" cite="http://librosweb.es/xhtml/capitulo_3/marcado_basico_de_texto.html"></span> marcado de hipertexto
+                        <span class="html-tag">
+                            &lt;/del> &lt;ins datetime="20091026" cite="http://librosweb.es/xhtml/capitulo_3.html">
+                        </span>
+                        marcas hipertextuales
+                        <span class="html-tag">
+                            &lt;/ins>
+                        </span>
+                        ) es un lenguaje de marcación diseñado para estructurar textos y presentarlos en forma de hipertexto.
+                        <span class="html-tag">
+                            &lt;/p> <br>
+                        <br>
+                        &lt;/body> <br>
+                        &lt;/html> <br>
+                        </span>
+                        
+                    </code>
+                </div>
+                <p>
+                    Resultado:
+                    <!-- TODO: PONER RESULTADO AQUI -->
+                </p>
+                <p>
+                    Conocimientos adquiridos con esta practica:
+                </p>
+                <ul>
+                    <li>Uso de la etiqueta ins </li>
+                    <li>Uso de la etiqueta del </li>
+                </ul>
+            </article>
+            <article>
+                <h2 class="target-element">Práctica 7 - Etiqueta blackquote (3.9)</h2>
+                <p>
+                    En esta practica entenderemos el uso de la etiqueta blackquote.
+                </p>
+                <p>
+                    La etiqueta <em>blackquote</em> sirve para poner una cita.
+                    Esta también nos permite poner cuál es el autor de la cita.
+                </p>
+                <p>La siguiente imagen es el resultado del codigo inmediatamente inferior a esta:</p>
+                <div class="img">
+                    <img src="https://uniwebsidad.com/static/libros/imagenes/xhtml/ejemplo_etiqueta_blockquote.gif"
+                        alt="Imagen de una página">
+                </div>
+                <p>Codigo:</p>
+                <div class="code">
+                    <code>
+                        <span class="html-tag">
+                            &lt;html> <br>
+                        &lt;head>&lt;title>
+                        </span>
+                        
+                        Ejemplo de etiqueta blockquote
+                        <span class="html-tag">
+                            &lt;/title>&lt;/head> <br>
+                        <br>
+                        &lt;body> <br>
+                        &lt;p>
+                        </span>
+                        Según el W3C, el valor del
+                        atributo 
+                        <span class="html-tag">
+                            &lt;em>
+                        </span>
+                        cite
+                        <span class="html-tag">
+                            &lt;/em>
+                        </span> en las etiquetas 
+                        <span class="html-tag">
+                            &lt;strong>
+                        </span>
+                        blockquote
+                        <span class="html-tag">
+                            &lt;/strong>
+                        </span>
+                        tiene el
+                        siguiente significado
+                        <span class="html-tag">
+                            :&lt;/p> <br>
+                        <br>
+                        &lt;blockquote cite="http://www.w3.org/TR/html401/struct/text.html">
+                        </span>
+                        "El valor de este atributo
+                        es una dirección URL que indica el documento original de la cita."
+                        <span class="html">
+                            &lt;/blockquote> <br>
+                        &lt;/body> <br>
+                        <br>
+                        &lt;/html>
+                        </span>
+                    </code>
+                </div>
+                <p>
+                    Resultado:
+                    <!-- TODO: PONER RESULTADO AQUI -->
+                </p>
+                <p>
+                    Conocimientos adquiridos con esta practica:
+                </p>
+                <ul>
+                    <li>Uso de la etiqueta blackquote </li>
+                </ul>
+            </article>
+            <h1 class="target-element" id="fifth-title">Capítulo 5: Listas</h1>
+            <article>
+                <h2 class="target-element">Práctica 1 - Listas no ordenadas (5.1)</h2>
+                <p>
+                    En esta practica entenderemos el uso de las listas no ordenadas.
+                </p>
+                <p>
+                    Las listas no ordenadas son aquellas que no tienen un orden en particular.
+                    Para crear una lista no ordenada se utiliza la etiqueta <em>ul</em> (unordered list).
+                    Dentro de esta etiqueta se pueden poner las etiquetas <em>li</em> (list item) para cada elemento de
+                    la lista.
+                </p>
+                <p>
+                    Copiamos el siguiente codigo en nuestro editor de texto y observamos el resultado:
+                </p>
+                <p>
+                    Código:
+                </p>
+                <div class="code">
+                    <code>
+                        <span class="html-tag">
+                            &lt;html> <br>
+                        &lt;head>&lt;title>
+                        </span>
+                        Ejemplo de etiqueta UL
+                        <span class="html-tag">
+                            &lt;/title>&lt;/head> <br>
+                        &lt;body> <br>
+                        <br>
+                        &lt;h1>
+                        </span>
+                        Menú
+                        <span class="html-tag">
+                            &lt;/h1> <br>
+                        <br>
+                        &lt;ul> <br>
+                        </span>
+                        
+                          <span class="html-tag">&lt;li></span> Inicio<span class="html-tag">&lt;/li> <br></span>
+                          <span class="html-tag">&lt;li></span> Noticias<span class="html-tag">&lt;/li> <br></span>
+                          <span class="html-tag">&lt;li></span> Artículos<span class="html-tag">&lt;/li> <br></span>
+                          <span class="html-tag">&lt;li></span> Contacto <span class="html-tag">&lt;/li> <br></span>
+                        
+                        <span class="html-tag">
+                            &lt;/ul> <br>
+                        <br>
+                        &lt;/body> <br>
+                        &lt;/html> <br>
+                        </span>
+                    </code>
+                </div>
+                <p>
+                    Resultado:
+                    <!-- TODO: PONER RESULTADO AQUI -->
+                </p>
+                <p>
+                    Conocimientos adquiridos con esta practica:
+                </p>
+                <ul>
+                    <li>Funcionamiento de las listas desordenadas</li>
+                </ul>
+
+            </article>
+            <article>
+                <h2 class="target-element">Práctica 2 - Listas ordenadas (5.2)</h2>
+                <p>
+                    En esta practica entenderemos el uso de las listas ordenadas.
+                </p>
+                <p>
+                    Las listas ordenadas son aquellas que tienen un orden en particular.
+                    Para crear una lista ordenada se utiliza la etiqueta <em>ol</em> (ordered list).
+                    Dentro de esta etiqueta se pueden poner las etiquetas <em>li</em> (list item) para cada elemento de
+                    la lista.
+                </p>
+                <p>
+                    Copiamos el siguiente codigo en nuestro editor de texto y observamos el resultado:
+                </p>
+                <p>
+                    Código:
+                </p>
+                <div class="code">
+                    <code>
+                        <span class="html-tag">
+                            &lt;html> <br>
+                        &lt;head>&lt;title>
+                        </span>
+                        Ejemplo de etiqueta OL
+                        <span class="html-tag">
+                            &lt;/title>&lt;/head> <br>
+                        &lt;body> <br>
+                        <br>
+                        &lt;h1>
+                        </span>
+                        Intrucciones
+                        <span class="html-tag">
+                            &lt;/h1> <br>
+                        <br>
+                        &lt;ol> <br>
+                        </span>
+                        
+                          <span class="html-tag">&lt;li></span>Enchufar correctamente<span class="html-tag">&lt;/li> <br></span>
+                          <span class="html-tag">&lt;li></span>Comprobar conexiones<span class="html-tag">&lt;/li> <br></span>
+                          <span class="html-tag">&lt;li></span>Encender el aparato<span class="html-tag">&lt;/li> <br></span>
+                        
+                        <span class="html-tag">
+                            &lt;/ol> <br>
+                        <br>
+                        &lt;/body> <br>
+                        &lt;/html> <br>
+                        </span>
+                    </code>
+                </div>
+                <p>
+                    Resultado:
+                    <!-- TODO: PONER RESULTADO AQUI -->
+                </p>
+                <p>
+                    Conocimientos adquiridos con esta practica:
+                </p>
+                <ul>
+                    <li>Funcionamiento de las listas ordenadas</li>
+                </ul>
+
+            </article>
+            <article>
+                <h2 class="target-element">Práctica 3 - Listas de definición (5.3)</h2>
+                <p>
+                    En esta practica entenderemos el uso de las etiquetas dt, dl y dd.
+                </p>
+                <p>
+                    Para crear una lista de definición se utiliza la etiqueta <em>dl</em> (definition list).
+                    Dentro de esta etiqueta se pueden poner las etiquetas <em>dt</em> (definition term) para cada
+                    elemento de la lista.
+                    Dentro de esta etiqueta se pueden poner las etiquetas <em>dd</em> (definition description) para cada
+                    elemento de la lista.
+                </p>
+                <p>
+                    Copiamos el siguiente codigo en nuestro editor de texto y observamos el resultado:
+                </p>
+                <p>
+                    Código:
+                </p>
+                <div class="code">
+                    <code>
+                        <span class="html-tag">
+                            &lt;html> <br>
+                        &lt;head>&lt;title>
+                        </span>
+                        Ejemplo de etiqueta DL
+                        <span class="html-tag">
+                            &lt;/title>&lt;/head> <br>
+                        &lt;body> <br>
+                        &lt;h1>
+                        </span>
+                        Metalenguajes
+                        <span class="html-tag">
+                            &lt;/h1> <br>
+                        <br>
+                        &lt;dl> <br>
+                        </span>
+                          <span class="html-tag">&lt;dt></span> SGML <span class="html-tag">&lt;/dt> <br></span>
+                          <span class="html-tag">&lt;dd></span> Metalenguaje para la definición de otros lenguajes de marcado_basico_de_texto
+                          <span class="html-tag"><span class="html-tag">&lt;/dd> <br></span>
+                            <br></span>
+                          <span class="html-tag">&lt;dt></span> XML <span class="html-tag">&lt;/dt> <br></span>
+                          <span class="html-tag">&lt;dd></span>
+                          Lenguaje basado en SGML y que se emplea para describir datos. <span class="hmtl-tag">&lt;/dd> <br></span>
+                          <br>
+                          <span class="html-tag">&lt;dt></span> RSS<span class="html-tag">&lt;/dt> <br></span>
+                          <span class="html-tag">&lt;dt></span> GML<span class="html-tag">&lt;/dt> <br></span>
+                          <span class="html-tag">&lt;dt></span> XHTML<span class="html-tag">&lt;/dt> <br></span>
+                          <span class="html-tag">&lt;dt></span> SVG<span class="html-tag">&lt;/dt> <br></span>
+                          <span class="html-tag">&lt;dt></span> XUL <span class="html-tag">&lt;/dt> <br></span>
+                          <span class="html-tag">&lt;dd></span> Lenguajes derivados de XML para determinadas aplicaciones
+                          <span class="html-tag">
+                            &lt;/dd> <br>
+                        &lt;/dl> <br>
+                        <br>
+                        &lt;/body><br>
+                        &lt;/html><br>
+                          </span>
+                    </code>
+                </div>
+                <p>
+                    Resultado:
+                    <!-- TODO: PONER RESULTADO AQUI -->
+                </p>
+                <p>
+                    Conocimientos adquiridos con esta practica:
+                </p>
+                <ul>
+                    <li>Funcionamiento de las listas de definiciones</li>
+                </ul>
+
+            </article>
+            <article>
+                <h2 class="target-element">Práctica 4 - Ejercicio (5.4)</h2>
+                <p>
+                    El ejercicio consiste en encontrar el codigo que corresponde a la siguiente imagen:
+                </p>
+                <p>
+                    Imagen:
+                </p>
+                <div class="img">
+                    <img src="https://uniwebsidad.com/static/libros/imagenes/xhtml/e0801.gif"
+                        alt="Imagen de una página">
+                </div>
+                <p>
+                    Código:
+                </p>
+                <div class="code">
+                    <code>
+                        <span class="html-tag">
+                            &lt;head> <br>
+                            &lt;meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> <br>
+                            &lt;title>
+                          </span>
+                          Lista simple anidada
+                          <span class="html-tag">
+                            &lt;/title> <br>
+                            &lt;/head> <br>
+                            <br>
+                            &lt;body> <br>
+                            <br>
+                            &lt;h1>
+                          </span>
+                          Menú
+                          <span class="html-tag">
+                            &lt;/h1> <br>
+                            <br>
+                            &lt;ul> <br>
+                              &lt;li>
+                          </span>
+                          Inicio
+                          <span class="html-tag">
+                            &lt;/li> <br>
+                              &lt;li> <br>
+                                &lt;strong>
+                          </span>
+                          Noticias
+                          <span class="html-tag">
+                            &lt;/strong> <br>
+                                &lt;ul> <br>
+                                  &lt;li>&lt;a href="#" title="Ver las noticias más recientes">
+                          </span>
+                          Recientes<span class="html-tag">&lt;/a>&lt;/li> <br></span>
+                          <span class="html-tag">
+                            &lt;li>&lt;strong>&lt;a href="#" title="Ver las noticias más leídas">
+                          </span>        
+                          Más leídas
+                          <span class="html-tag">
+                            &lt;/a>&lt;/strong>&lt;/li> <br>
+                          </span>
+                          <span class="html-tag">
+                            &lt;li>&lt;a href="#" title="Ver las noticias más valoradas">
+                          </span>
+                          Más valoradas
+                          <span class="html-tag">
+                            &lt;/a>&lt;/li> <br>
+                                &lt;/ul> <br>
+                              &lt;/li> <br>
+                            &lt;/ul> <br>
+                            <br>
+                            &lt;/body> <br>
+                          </span>
+                    </code>
+                </div>
+                <p>
+                    Resultado:
+                    <!-- TODO: PONER RESULTADO AQUI -->
+                </p>
+                <p>
+                    Conocimientos adquiridos con esta practica:
+                </p>
+                <ul>
+                    <li>Funcionamiento de las listas anidadas</li>
+                </ul>
+            </article>
+            <article>
+                <h2 class="target-element">Práctica 5 - Ejercicio (5.5)</h2>
+                <p>
+                    El ejercicio consiste, al igual que el anterior, en encontrar el codigo que corresponde a la
+                    siguiente imagen:
+                </p>
+                <p>
+                    Imagen:
+                </p>
+                <div class="img">
+                    <img src="https://uniwebsidad.com/static/libros/imagenes/xhtml/e0901.gif"
+                        alt="Imagen de una página">
+                </div>
+                <p>
+                    Código:
+                </p>
+                <div class="code">
+                    <code>
+                        <span class="html-tag">
+                            &lt;head> <br>
+                            &lt;meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> <br>
+                            &lt;title>
+                          </span>
+                          Lista compleja anidada
+                          <span class="html-tag">
+                            &lt;/title> <br>
+                            &lt;/head> <br>
+                            <br>
+                            &lt;body> <br>
+                            <br>
+                            &lt;h1>
+                          </span>
+                          Menú
+                          <span class="html-tag">
+                            &lt;/h1> <br>
+                            <br>
+                            &lt;ul> <br>
+                              &lt;li>
+                          </span>
+                          Inicio
+                          <span class="html-tag">
+                            &lt;/li> <br>
+                              &lt;li> <br>
+                                &lt;strong>
+                          </span>
+                          Noticias
+                          <span class="html-tag">
+                            &lt;/strong> <br>
+                                &lt;ul> <br>
+                                  &lt;li>&lt;a href="#" title="Ver las noticias más recientes">
+                          </span>
+                          Recientes
+                          <span class="html-tag">
+                            &lt;/a>&lt;/li> <br>
+                                  &lt;li>&lt;strong>&lt;a href="#" title="Ver las noticias más leídas">
+                          </span>
+                          Más leídas
+                          <span class="html-tag">
+                            &lt;/a>&lt;/strong>&lt;/li> <br>
+                                  &lt;li>&lt;a href="#" title="Ver las noticias más valoradas">
+                          </span>
+                          Más valoradas
+                          <span class="html-tag">
+                            &lt;/a>&lt;/li> <br>
+                                &lt;/ul> <br>
+                              &lt;/li> <br>
+                              &lt;li> <br>
+                          </span>
+                                Artículos
+                                <span class="html-tag">
+                                  <br>
+                                  &lt;ol> <br>
+                                    &lt;li>&lt;strong>
+                                </span>
+                                XHTML
+                                <span class="html-tag">
+                                  &lt;/strong>&lt;/li> <br>
+                                  &lt;li>
+                                </span>
+                                CSS
+                                <span class="html-tag">
+                                  &lt;/li> <br>
+                                  &lt;li>
+                                </span>
+                                JavaScript
+                                <span class="html-tag">
+                                  &lt;/li> <br>
+                                  &lt;li>
+                                </span>
+                                Otros
+                                <span class="html-tag">
+                                  &lt;/li> <br>
+                                &lt;/ol> <br>
+                              &lt;/li> <br>
+                              &lt;li> <br>
+                                </span>
+                                Contacto 
+                                <span class="html-tag">
+                                  <br>
+                                &lt;dl> <br>
+                                  &lt;dt>&lt;em>
+                                </span>
+                                Email
+                                <span class="html-tag">
+                                  &lt;/em>&lt;/dt> <br>
+                                  &lt;dd>&lt;strong>
+                                </span>
+                                nombre@direccion.com
+                                <span class="html-tag">
+                                  &lt;/strong>&lt;/dd> <br>
+                                  &lt;dt>&lt;em>
+                                </span>
+                                Teléfono
+                                <span class="html-tag">
+                                  &lt;/em>&lt;/dt> <br>
+                                  &lt;dd>
+                                </span>
+                                900 900 900
+                                <span class="html-tag">
+                                  &lt;/dd> <br>
+                                  &lt;dt>&lt;em>
+                                </span>
+                                Fax
+                                <span class="html-tag">
+                                  &lt;/em>&lt;/dt> <br>
+                                  &lt;dd>
+                                </span>
+                                900 900 900&
+                                <span class="html-tag">
+                                  lt;/dd> <br>
+                                &lt;/dl> <br>
+                              &lt;/li> <br>
+                            &lt;/ul> <br>
+                             <br>
+                            &lt;/body> <br>
+                                </span>
+                    </code>
+                </div>
+                <p>
+                    Resultado:
+                    <!-- TODO: PONER RESULTADO AQUI -->
+                </p>
+                <p>
+                    Conocimientos adquiridos con esta practica:
+                </p>
+                <ul>
+                    <li>Funcionamiento de las listas anidadas</li>
+                </ul>
+            </article>
+            <h1 class="target-element" id="sixth-title">Capítulo 6: Imágenes i objetos</h1>
+            <article>
+                <h2 class="target-element">Práctica 1 - Ejercicio (6.1)</h2>
+                <p>
+                    En esta practica entenderemos como funciona la inserción de imágenes en una HTML.
+                </p>
+                <p>
+                    Para insertar una imagen en una página HTML, debemos utilizar la etiqueta <em>img</em>
+                    y dentro de ella, el atributo <em>src</em> que indica la ruta de la imagen.
+                </p>
+                <p>
+                    Modificar la página de índice del portfolio de los ejercicios del capítulo 4 para mostrar
+                    directamente las imágenes de los proyectos.</p>
+                <p>
+                    Código:
+                </p>
+                <div class="code">
+                    <code>
+                        <span class="html-tag">
+                            &lt;head> <br>
+                            &lt;meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> <br>
+                            &lt;link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" /> <br>
+                            &lt;title>
+                        </span>
+                        Mi Sitio
+                        <span class="html-tag">
+                            &lt;/title> <br>
+                            &lt;/head> <br>
+                            <br>
+                            &lt;body> <br>
+                            <br>
+                                &lt;p>&lt;a href="portfolio/indice.html" title="Página principal de Mi Sitio" rel="index">
+                        </span>
+                        Volver a la pagina principal
+                        <span class="html-tag">
+                            &lt;/a> <br>
+                            &lt;/p> <br>
+                         <br>
+                            &lt;h1>
+                        </span>
+                        Ultimos proyectos
+                        <span class="html-tag">
+                            &lt;/h1> <br>
+                         <br>
+                            &lt;p>
+                        </span>
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec iaculis posuere justo. Nam vel neque.
+                        <span class="html-tag">
+                            &lt;/p> <br>
+                         <br>
+                            &lt;h3>
+                        </span>
+                        Proyecto 1&lt;/h3> <br>
+                         <br>
+                            &lt;p>Etiam consectetuer, mauris vitae cursus scelerisque, dui turpis dignissim justo, et euismod enim odio sit ameterat.
+                            <span class="html-tag">
+                                &lt;/p> <br>
+                         <br>
+                            &lt;p>&lt;img src="../imagenes/proyecto1.png" title="Imagen del Proyecto 1" />&lt;/p> <br>
+                         <br>
+                            &lt;h3>
+                            </span>
+                            Proyecto 2
+                            <span class="html-tag">
+                                &lt;/h3> <br>
+                         <br>
+                            &lt;p>
+                            </span>
+                            Etiam consectetuer, mauris vitae cursus scelerisque, dui turpis dignissim justo, et euismod enim odio sit ameterat.
+                            <span class="html-tag">
+                                &lt;/p> <br>
+                         <br>
+                            &lt;p>&lt;img src="../imagenes/proyecto2.png" title="Imagen del Proyecto 2" />&lt;/p> <br>
+                         <br>
+                        &lt;/body>
+                            </span>
+                    </code>
+                </div>
+                <p>
+                    Resultado:
+                    <!-- TODO: PONER RESULTADO AQUI -->
+                </p>
+                <p>
+                    Conocimientos adquiridos con esta practica:
+                </p>
+                <ul>
+                    <li>Funcionamiento de la inserción de imagenes</li>
+                </ul>
+
+            </article>
+            <article>
+                <h2 class="target-element">Práctica 2 - Ejercicio Ana (6.2)</h2>
+                <p>
+                    En este ejercicio aprenderemos a inserar audios y videos.
+                </p>
+                <p>
+                    Para insertar un audio en una página HTML, debemos utilizar la etiqueta <em>audio</em>.
+                    Dentro de esta etiqueta, debemos incluir la etiqueta <em>source</em> que indica la ruta del audio.
+                </p>
+                <p>
+                    Por otro lado, para insertar un vdeio en una página HTML, debemos utilizar la etiqueta <em>video</em>.
+                    Dentro de esta etiqueta, debemos incluir la etiqueta <em>source</em> que indica la ruta del video.
+                </p>
+                <p>
+                    En el ejercicio replicaremos las siguientes imagenes:
+                </p>
+                <div class="img">
+                    <img src="./img/Imagen1_6_2.png" alt="Imagen del resultado"> 
+                    <!-- TODO: Recordar cambiar el texto alternativo en todas las imagenes -->
+                </div>
+                <div class="img">
+                    <img src="./img/Imagen2_6_2.png" alt="Imagen del resultado"> 
+                    <!-- TODO: Recordar cambiar el texto alternativo en todas las imagenes -->
+                </div>
+                <p>
+                    Código:
+                </p>
+                <div class="code">
+                    <code>
+                        <!-- TODO Hacer el codigo de esta practica -->
+                    </code>
+                </div>
+                <p>
+                    Resultado:
+                    <!-- TODO: PONER RESULTADO AQUI -->
+                </p>
+                <p>
+                    Conocimientos adquiridos con esta practica:
+                </p>
+                <ul>
+                    <li>Funcionamiento de la inserción de imagenes</li>
+                </ul>
+
             </article>
         </div>
-    </div> 
-    
+    </div>
+
     <footer class="target-element">
         <div class="final">
-            Parece que has llegado al final... <a id="footer-backtotop" href="#backtotop">Voler arriba<span class="top-arrow">↑</span> </a>
+            Parece que has llegado al final... <a id="footer-backtotop" href="#backtotop">Voler arriba<span
+                    class="top-arrow">↑</span> </a>
         </div>
         <div id="with-love">
             With <span class="heart">♥</span> by Albert
