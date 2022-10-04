@@ -19,9 +19,10 @@ div.index h1#titulo-indice {
 
 }
 
-div.index h2 {
+div.index summary {
     font-size: 1.1rem;
     padding-top: 1.2rem;
+    font-weight: bold;
     margin-block-end: 0;
     margin-block-start: 0;
 }
