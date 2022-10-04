@@ -12,7 +12,7 @@ la posicion de la seccion correspondiente (que hemos conseguido
 en el paso anterior)
 */
 
-// Deelaramos la funcion que nos hace scroll automatico a una posicion
+// Declaramos la funcion que nos hace scroll automatico a una posicion
 function scrollToElement(pos) {
     window.scrollTo({
         top: pos,
@@ -44,4 +44,3 @@ for (let i = 0; i < indexButtons.length; i++) {
         scrollToElement(targetElementsHeights[i]);
     });
 }
-

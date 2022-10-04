@@ -20,7 +20,7 @@ div.index h1#titulo-indice {
 }
 
 div.index h2 {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     padding-top: 1.2rem;
     margin-block-end: 0;
     margin-block-start: 0;
@@ -33,18 +33,18 @@ a.index-chapter {
 }
 
 div.index div.index-el {
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin-top: .8rem;
     padding-top: .2rem;
     padding-bottom: .2rem;
-    padding-left: .8rem;
+    padding-left: .5rem;
     max-width: 80%;
 }
 
 a.index-el {
     text-decoration: none;
     color: black;
-    font-size: 1.1rem;
+    font-size: .9rem;
 }
 
 div.index-el:hover {
