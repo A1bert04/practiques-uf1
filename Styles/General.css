@@ -9,7 +9,7 @@ body {
 
 /* Change selection color */
 ::selection {
-    background-color: #b9b9b9;
+    background-color: #d2d0d0;
     color: black;
 }
 

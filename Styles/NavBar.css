@@ -59,7 +59,6 @@ nav {
     color: red;
     padding-left: 1rem !important;
     opacity: 1;
-
 }
 
 .nav-right {
@@ -73,4 +72,22 @@ nav {
     border-radius: 10%;
     border: 1px solid gray;
     opacity: 1;
+}
+
+.backtoindex {
+    background-color: rgb(174, 49, 0);
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    font-size: .8rem;
+    cursor: pointer;
+    transition: 0.3s;
+    text-decoration: none;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.backtoindex:hover {
+    background-color: rgb(174, 49, 0, 0.7);
 }
