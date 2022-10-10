@@ -42,7 +42,7 @@ div.web-chapter p {
 }
 
 div.web-chapter li {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     line-height: 2;
     text-align: justify;
 }
@@ -75,8 +75,8 @@ div.prac {
     color: white;
     border: none;
     border-radius: 0.5rem;
-    padding: 0.5rem;
-    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    font-size: 1.1rem;
     cursor: pointer;
     transition: 0.3s;
     text-decoration: none;
@@ -91,4 +91,21 @@ div.prac {
     text-align: center;
     padding-left: 3rem;
     padding-right: 3rem;
+}
+
+table {
+    border-collapse: collapse;
+    border: 1px solid rgb(174, 49, 0);
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+th, td {
+    text-align: center;
+    padding: 8px;
+}
+
+tr, td {
+    border: 1px solid rgb(174, 49, 0);
 }
