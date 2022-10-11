@@ -109,3 +109,7 @@ th, td {
 tr, td {
     border: 1px solid rgb(174, 49, 0);
 }
+
+iframe {
+    border: 0;
+}
