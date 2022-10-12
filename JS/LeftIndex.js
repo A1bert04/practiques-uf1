@@ -20,27 +20,35 @@ function scrollToElement(pos) {
     });
 }
 
-// Seleccionamos los elementos del indice y los guardamos en un array
-var indexButtons = document.querySelectorAll('.scroll-onclick');
+function main() {
+    // Seleccionamos los elementos del indice y los guardamos en un array
+    var indexButtons = document.querySelectorAll('.scroll-onclick');
 
-// Seleccionamos los titulos de los capitulos y los guardamos en un array
-var targetElements = document.querySelectorAll('.target-element');
+    // Seleccionamos los titulos de los capitulos y los guardamos en un array
+    var targetElements = document.querySelectorAll('.target-element');
 
-// Aconseguimos la posicion de todos los elementos y los guardamos en un array
-var targetElementsHeights = [];
+    // Aconseguimos la posicion de todos los elementos y los guardamos en un array
+    var targetElementsHeights = [];
 
-// Recorremos el array de elementos y vamos guardando su posicion en targetElementsHeights
-for (let i = 0; i < targetElements.length; i++) {
-    let rect = targetElements[i].getBoundingClientRect();
-    let top = rect.top + window.scrollY - 50;
-    targetElementsHeights.push(top);
-};
+    // Recorremos el array de elementos y vamos guardando su posicion en targetElementsHeights
+    for (let i = 0; i < targetElements.length; i++) {
+        let rect = targetElements[i].getBoundingClientRect();
+        let top = rect.top + window.scrollY - 50;
+        targetElementsHeights.push(top);
+    };
 
-// Para cada boton del indice, le asignamos un evento onclick que hace scroll al target 
-// correspondiente (con mismo i en el otro array)
-for (let i = 0; i < indexButtons.length; i++) {
-    indexButtons[i].addEventListener('click', function () {
-        scrollToElement(targetElementsHeights[i]);
-    });
+    // Para cada boton del indice, le asignamos un evento onclick que hace scroll al target 
+    // correspondiente (con mismo i en el otro array)
+    for (let i = 0; i < indexButtons.length; i++) {
+        indexButtons[i].addEventListener('click', function () {
+            scrollToElement(targetElementsHeights[i]);
+        });
+    }
+
 }
+
+main();
+
+// Añadimos un evento que vuelva a ejecutar la funcion main cuando se cambie el tamaño de la ventana
+window.addEventListener('resize', main);
 

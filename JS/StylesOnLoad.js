@@ -29,7 +29,12 @@ function stylesOnLoad() {
 
         // Ocultamos el indice para que solo se mostre el contenido
         index.style.display = 'none';
+        
     }
+
+    // Ocultamos los resultados de busqueda cuando se cargue la pagina
+    let searchResults = document.querySelector(".results");
+    searchResults.style.display = 'none';
 
 }
 
