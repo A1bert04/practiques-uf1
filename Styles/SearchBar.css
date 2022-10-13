@@ -22,7 +22,7 @@
     width: 10rem;
     padding-left: 1.25rem;
     padding-right: 1.25rem;
-    max-height: auto;
+    max-height: 100vh;
     overflow-y: auto;
     border: 1px solid #ccc;
     border-top: none;
@@ -31,7 +31,6 @@
     text-align: left;
     /* Make it non scrollable */
     overflow: hidden;
-    max-height: auto;
     opacity: 1;
 
 }
@@ -64,3 +63,5 @@
     font-size: .8rem;
     color: #4e4e4e;
 }
+
+/* COMPROBADO: JUEVES 13-10 */

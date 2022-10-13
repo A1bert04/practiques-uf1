@@ -16,3 +16,4 @@ indexEnd.addEventListener('mouseover', function () {
     indexEnd.style.cursor = 'pointer';
 });
 
+// COMPROBADO: JUEVES 13-10

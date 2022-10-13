@@ -52,3 +52,4 @@ main();
 // Añadimos un evento que vuelva a ejecutar la funcion main cuando se cambie el tamaño de la ventana
 window.addEventListener('resize', main);
 
+// COMPROBADO: JUEVES 13-10

@@ -14,3 +14,5 @@ backToTopButton.addEventListener('click', function () {
         behavior: 'smooth'
     });
 });
+
+// COMPROBADO: JUEVES 13-10

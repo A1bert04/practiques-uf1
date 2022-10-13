@@ -32,7 +32,7 @@ function stylesOnLoad() {
         
     }
 
-    // Ocultamos los resultados de busqueda cuando se cargue la pagina
+    // Ocultamos los resultados de la barra de busqueda cuando se cargue la pagina
     let searchResults = document.querySelector(".results");
     searchResults.style.display = 'none';
 
@@ -41,8 +41,7 @@ function stylesOnLoad() {
 // Llamamos a la funcion al cargar la pagina
 stylesOnLoad();
 
+// Añadimos un evento que ejecute la funcion stylesOnLoad cuando se cambie el tamaño de la ventana
+window.addEventListener('resize', stylesOnLoad);
 
-
-
-
-
+// COMPROBADO: JUEVES 13-10

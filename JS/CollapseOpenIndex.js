@@ -1,5 +1,6 @@
 /* 
-Codigo para contraer y expandir el indice
+Codigo para contraer y expandir el indice.
+En el programa guardamos todos los titulos del indice y añadimos eventos que al hacer click expandan ese capitulo y contraiga todos los demás.
 */
 
 // 1 - Hacemos que al cargar la pagina el capitulo 2 este expandido
@@ -7,6 +8,7 @@ var cap2Title = document.querySelector('#index-chapter-2');
 cap2Title.setAttribute('open', 'true');
 
 // 2 - Hacemos que al hacer click en el titulo de un capitulo se expanda o contraiga
+
 // Seleccionamos todos los titulos de capitulo
 var chapterTitles = document.querySelectorAll('.index-chapter-expandable');
 
@@ -41,3 +43,4 @@ for (let i = 0; i < chapterTitles.length; i++) {
 
 }
 
+// COMPROBADO: JUEVES 13-10

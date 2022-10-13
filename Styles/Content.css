@@ -1,7 +1,6 @@
-/* Estilos del contenido de la web en si */
+/* Estilos del contenido de la web en si, de los articulos */
 
 div.content {
-    /* Display items each one next to the other */
     display: flex;
     padding-top: 3rem;
 
@@ -101,15 +100,19 @@ table {
     text-align: center;
 }
 
-th, td {
+th,
+td {
     text-align: center;
     padding: 8px;
 }
 
-tr, td {
+tr,
+td {
     border: 1px solid rgb(174, 49, 0);
 }
 
 iframe {
     border: 0;
 }
+
+/* COMPROBADO: JUEVES 13-10 */

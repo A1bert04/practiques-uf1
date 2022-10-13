@@ -7,13 +7,13 @@ body {
     color: black;
 }
 
-/* Change selection color */
 ::selection {
     background-color: #d2d0d0;
     color: black;
 }
 
-/* Make a progress scrollbar */
 ::-webkit-progress-bar {
     background-color: white;
 }
+
+/* COMPROBADO: JUEVES 13-10 */
