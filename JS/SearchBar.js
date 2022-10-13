@@ -133,7 +133,7 @@ function hideElements() {
   if (searchBar.value == "") {
     document.getElementById("write-more").innerHTML = "Escribe algo para buscar";
   } else {
-    document.getElementById("write-more").innerHTML = "Intenta ser más concreto (+3)";
+    document.getElementById("write-more").innerHTML = "Intenta ser más concreto (+3 resultados)";
   }
 
 }
@@ -156,4 +156,4 @@ results.forEach(result => {
   });
 });
 
-
+// COMPROBADO 13-10
