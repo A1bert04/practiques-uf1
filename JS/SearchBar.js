@@ -28,6 +28,38 @@ searchBar.addEventListener("input", () => {
   }
 });
 
+// Hacemos un evento para que cuando se clique fuera de la barra de busqueda se borre lo que hay en ella
+window.addEventListener("click", (e) => {
+  if (e.target != searchBar) {
+    searchBar.value = "";
+  }
+});
+
+// Hacemos un evento para que cuando se pulse ctrl K se ponga el cursor en la 
+// barra de bisqueda y se muestren los resultados
+window.addEventListener("keydown", (e) => {
+  if (e.ctrlKey && e.key == "k") {
+    searchBar.focus();
+    resultsBox.style.display = "block";
+    hideElements();
+  }
+});
+
+// Desactivamos el atajo Ctrl K del navegador
+window.addEventListener("keydown", (e) => {
+  if (e.ctrlKey && e.key == "k") {
+    e.preventDefault();
+  }
+});
+
+// Hacemos que cuando se pulse escape se cierre la barra de busqueda
+window.addEventListener("keydown", (e) => {
+  if (e.key == "Escape") {
+    searchBar.value = "";
+    resultsBox.style.display = "none";
+  }
+});
+
 // Declaramos la funcion que nos hace scroll automatico a una posicion
 function scrollToElement(pos) {
   window.scrollTo({
@@ -74,7 +106,8 @@ function hideElements() {
   var searchResults = document.querySelectorAll(".result");
 
   // Ponemos un contador para contar cuantos resultados se estan mostrando
-  let counter = 0;
+  // Si no hay texto en la barra, es 3, sino es 0
+  let counter = searchBar.value == "" ? 3 : 0;
 
   // miramos si el texto de dentro de la barra de busqueda coincide con el texto de algun resultado
   for (let i = 0; i < searchResults.length; i++) {
@@ -95,6 +128,14 @@ function hideElements() {
       document.getElementById("write-more").style.display = "block";
     }
   }
+
+  // Si no hay texto en la barra de busqueda, cambiamos el texto de ser mas concreto por otro
+  if (searchBar.value == "") {
+    document.getElementById("write-more").innerHTML = "Escribe algo para buscar";
+  } else {
+    document.getElementById("write-more").innerHTML = "Intenta ser más concreto (+3)";
+  }
+
 }
 
 // Añadimos un evento que ejecute la funcion hideElements cuando se escriba en la barra de busqueda
