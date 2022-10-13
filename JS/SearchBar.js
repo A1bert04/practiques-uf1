@@ -90,9 +90,9 @@ function hideElements() {
 
     // Si el contador no llega a 3 ocultamos el texto de ser mas cocnreto
     if (counter < 3) {
-      document.querySelector("#write-more").style.display = "none";
+      document.getElementById("write-more").style.display = "none";
     } else {
-      document.querySelector("#write-more").style.display = "block";
+      document.getElementById("write-more").style.display = "block";
     }
   }
 }
