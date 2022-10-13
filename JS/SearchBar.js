@@ -75,8 +75,6 @@ function hideElements() {
 // Añadimos un evento que ejecute la funcion hideElements cuando se escriba en la barra de busqueda
 searchBar.addEventListener("input", hideElements);
 
-
-
 // Hacemos una funcion que borre el contenido de la barra de busqueda
 function clearSearchBar() {
   searchBar.value = "";

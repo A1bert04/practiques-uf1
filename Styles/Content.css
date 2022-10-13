@@ -12,13 +12,13 @@ h1.target-element {
 }
 
 h1.target-element#first-title {
-    padding-top: 0;
+    padding-top: 0rem;
 }
 
 div.web-chapter {
     padding-left: 27em;
     padding-right: 5rem;
-    padding-top: 1rem;
+    padding-top: 1.5rem;
     width: 60%;
 }
 
