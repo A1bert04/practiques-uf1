@@ -16,16 +16,27 @@ window.addEventListener("click", (e) => {
   }
 });
 
-// Hacemos que los resultados se muestren cuando se haga click en la barra de busqueda
-searchBar.addEventListener("click", () => {
-  resultsBox.style.display = "block";
-});
-
 // Hacemos que los resultados se muestren cuando se escriba en la barra de busqueda
 searchBar.addEventListener("input", () => {
   resultsBox.style.display = "block";
 })
 
+// Hacemos un evento que esconda los resultados cuando borremos lo que hay en la barra de busqueda
+searchBar.addEventListener("input", () => {
+  if (searchBar.value == "") {
+    resultsBox.style.display = "none";
+  }
+});
+
+// Declaramos la funcion que nos hace scroll automatico a una posicion
+function scrollToElement(pos) {
+  window.scrollTo({
+    top: pos,
+    behavior: 'smooth'
+  });
+}
+
+// Esta funcion relaciona cada resultado con cada titulo para que haga scroll hasta el titulo
 function relResultadosTitulos() {
   // Seleccionamos los resultados de busqueda y los guardamos en un array
   var searchResults = document.querySelectorAll(".result");
@@ -38,17 +49,17 @@ function relResultadosTitulos() {
 
   // Recorremos el array de titulos y vamos guardando su posicion en targetElementsHeights
   for (let i = 0; i < targetElements.length; i++) {
-      let rect = targetElements[i].getBoundingClientRect();
-      let top = rect.top + window.scrollY - 50;
-      targetElementsHeights.push(top);
+    let rect = targetElements[i].getBoundingClientRect();
+    let top = rect.top + window.scrollY - 50;
+    targetElementsHeights.push(top);
   };
 
   // Para cada resultado, le asignamos un evento onclick que hace scroll al target 
   // correspondiente (con mismo i en el otro array)
   for (let i = 0; i < searchResults.length; i++) {
-      searchResults[i].addEventListener('click', function () {
-          scrollToElement(targetElementsHeights[i]);
-      });
+    searchResults[i].addEventListener('click', function () {
+      scrollToElement(targetElementsHeights[i]);
+    });
   }
 }
 
@@ -62,13 +73,20 @@ function hideElements() {
   // Seleccionamos todos los resultados posibles
   var searchResults = document.querySelectorAll(".result");
 
+  // Ponemos un contador para contar cuantos resultados se estan mostrando
+  let counter = 0;
+
   // miramos si el texto de dentro de la barra de busqueda coincide con el texto de algun resultado
   for (let i = 0; i < searchResults.length; i++) {
-      if (searchResults[i].innerHTML.toLowerCase().includes(searchBar.value.toLowerCase())) {
-          searchResults[i].style.display = "block";
-      } else {
-          searchResults[i].style.display = "none";
-      }
+
+    // Si no coincide, se oculta el resultado
+    if (searchResults[i].innerHTML.toLowerCase().includes(searchBar.value.toLowerCase()) && counter < 3) {
+      searchResults[i].style.display = "block";
+      // Al mostrar un resultado incrementamos el contador en 1 para que no se muestren mas de 3 (al llegar a 3 no se cumplira la condicion)
+      counter++;
+    } else {
+      searchResults[i].style.display = "none";
+    }
   }
 }
 
