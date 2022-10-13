@@ -87,6 +87,13 @@ function hideElements() {
     } else {
       searchResults[i].style.display = "none";
     }
+
+    // Si el contador no llega a 3 ocultamos el texto de ser mas cocnreto
+    if (counter < 3) {
+      document.querySelector("#write-more").style.display = "none";
+    } else {
+      document.querySelector("#write-more").style.display = "block";
+    }
   }
 }
 
