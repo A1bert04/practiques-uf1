@@ -19,14 +19,14 @@ window.addEventListener("click", (e) => {
 // Hacemos que los resultados se muestren cuando se escriba en la barra de busqueda
 searchBar.addEventListener("input", () => {
   resultsBox.style.display = "block";
-})
-
-// Hacemos un evento que esconda los resultados cuando borremos lo que hay en la barra de busqueda
-searchBar.addEventListener("input", () => {
-  if (searchBar.value == "") {
-    resultsBox.style.display = "none";
-  }
 });
+
+// Hacemos un evento que muestre los resultados cuando se haga click en la barra de busqueda
+searchBar.addEventListener("click", () => {
+  resultsBox.style.display = "block";
+  hideElements();
+});
+
 
 // Hacemos un evento para que cuando se clique fuera de la barra de busqueda se borre lo que hay en ella
 window.addEventListener("click", (e) => {
